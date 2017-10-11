@@ -1,0 +1,7 @@
+G:\pro\netcore\Iot.Mns\aliyun-netcore-sdk-core\bin\Debug\Regions\endpoints.xml
+G:\pro\netcore\Iot.Mns\aliyun-netcore-sdk-core\bin\Debug\aliyun-netcore-sdk-core.dll
+G:\pro\netcore\Iot.Mns\aliyun-netcore-sdk-core\bin\Debug\aliyun-netcore-sdk-core.pdb
+G:\pro\netcore\Iot.Mns\aliyun-netcore-sdk-core\obj\Debug\aliyun-netcore-sdk-core.csproj.CoreCompileInputs.cache
+G:\pro\netcore\Iot.Mns\aliyun-netcore-sdk-core\obj\Debug\aliyun-netcore-sdk-core.dll
+G:\pro\netcore\Iot.Mns\aliyun-netcore-sdk-core\obj\Debug\aliyun-netcore-sdk-core.pdb
+G:\pro\netcore\Iot.Mns\aliyun-netcore-sdk-core\obj\Debug\aliyun-netcore-sdk-core.csprojResolveAssemblyReference.cache

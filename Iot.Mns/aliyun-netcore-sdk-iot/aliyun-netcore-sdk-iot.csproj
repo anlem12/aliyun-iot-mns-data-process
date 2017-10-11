@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{222E7D9F-571D-47A8-A8F7-BF32E7443A64}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>aliyun_netcore_sdk_iot</RootNamespace>
+    <AssemblyName>aliyun-netcore-sdk-iot</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Iot\Model\V20170420\ApplyDeviceWithNamesRequest.cs" />
+    <Compile Include="Iot\Model\V20170420\ApplyDeviceWithNamesResponse.cs" />
+    <Compile Include="Iot\Model\V20170420\BatchGetDeviceStateRequest.cs" />
+    <Compile Include="Iot\Model\V20170420\BatchGetDeviceStateResponse.cs" />
+    <Compile Include="Iot\Model\V20170420\CreateProductRequest.cs" />
+    <Compile Include="Iot\Model\V20170420\CreateProductResponse.cs" />
+    <Compile Include="Iot\Model\V20170420\DeviceGrantRequest.cs" />
+    <Compile Include="Iot\Model\V20170420\DeviceGrantResponse.cs" />
+    <Compile Include="Iot\Model\V20170420\DevicePermitModifyRequest.cs" />
+    <Compile Include="Iot\Model\V20170420\DevicePermitModifyResponse.cs" />
+    <Compile Include="Iot\Model\V20170420\DeviceRevokeByIdRequest.cs" />
+    <Compile Include="Iot\Model\V20170420\DeviceRevokeByIdResponse.cs" />
+    <Compile Include="Iot\Model\V20170420\DeviceRevokeByTopicRequest.cs" />
+    <Compile Include="Iot\Model\V20170420\DeviceRevokeByTopicResponse.cs" />
+    <Compile Include="Iot\Model\V20170420\GetCatsRequest.cs" />
+    <Compile Include="Iot\Model\V20170420\GetCatsResponse.cs" />
+    <Compile Include="Iot\Model\V20170420\ListDevicePermitsRequest.cs" />
+    <Compile Include="Iot\Model\V20170420\ListDevicePermitsResponse.cs" />
+    <Compile Include="Iot\Model\V20170420\PubRequest.cs" />
+    <Compile Include="Iot\Model\V20170420\PubResponse.cs" />
+    <Compile Include="Iot\Model\V20170420\QueryApplyStatusRequest.cs" />
+    <Compile Include="Iot\Model\V20170420\QueryApplyStatusResponse.cs" />
+    <Compile Include="Iot\Model\V20170420\QueryDeviceByNameRequest.cs" />
+    <Compile Include="Iot\Model\V20170420\QueryDeviceByNameResponse.cs" />
+    <Compile Include="Iot\Model\V20170420\QueryDeviceRequest.cs" />
+    <Compile Include="Iot\Model\V20170420\QueryDeviceResponse.cs" />
+    <Compile Include="Iot\Model\V20170420\QueryPageByApplyIdRequest.cs" />
+    <Compile Include="Iot\Model\V20170420\QueryPageByApplyIdResponse.cs" />
+    <Compile Include="Iot\Model\V20170420\RegistDeviceRequest.cs" />
+    <Compile Include="Iot\Model\V20170420\RegistDeviceResponse.cs" />
+    <Compile Include="Iot\Model\V20170420\RevertRpcRequest.cs" />
+    <Compile Include="Iot\Model\V20170420\RevertRpcResponse.cs" />
+    <Compile Include="Iot\Model\V20170420\ServerOnlineRequest.cs" />
+    <Compile Include="Iot\Model\V20170420\ServerOnlineResponse.cs" />
+    <Compile Include="Iot\Model\V20170420\SubRequest.cs" />
+    <Compile Include="Iot\Model\V20170420\SubResponse.cs" />
+    <Compile Include="Iot\Model\V20170420\SubTopicFilterRequest.cs" />
+    <Compile Include="Iot\Model\V20170420\SubTopicFilterResponse.cs" />
+    <Compile Include="Iot\Model\V20170420\UnSubRequest.cs" />
+    <Compile Include="Iot\Model\V20170420\UnSubResponse.cs" />
+    <Compile Include="Iot\Model\V20170420\UpdateProductRequest.cs" />
+    <Compile Include="Iot\Model\V20170420\UpdateProductResponse.cs" />
+    <Compile Include="Iot\Transform\V20170420\ApplyDeviceWithNamesResponseUnmarshaller.cs" />
+    <Compile Include="Iot\Transform\V20170420\BatchGetDeviceStateResponseUnmarshaller.cs" />
+    <Compile Include="Iot\Transform\V20170420\CreateProductResponseUnmarshaller.cs" />
+    <Compile Include="Iot\Transform\V20170420\DeviceGrantResponseUnmarshaller.cs" />
+    <Compile Include="Iot\Transform\V20170420\DevicePermitModifyResponseUnmarshaller.cs" />
+    <Compile Include="Iot\Transform\V20170420\DeviceRevokeByIdResponseUnmarshaller.cs" />
+    <Compile Include="Iot\Transform\V20170420\DeviceRevokeByTopicResponseUnmarshaller.cs" />
+    <Compile Include="Iot\Transform\V20170420\GetCatsResponseUnmarshaller.cs" />
+    <Compile Include="Iot\Transform\V20170420\ListDevicePermitsResponseUnmarshaller.cs" />
+    <Compile Include="Iot\Transform\V20170420\PubResponseUnmarshaller.cs" />
+    <Compile Include="Iot\Transform\V20170420\QueryApplyStatusResponseUnmarshaller.cs" />
+    <Compile Include="Iot\Transform\V20170420\QueryDeviceByNameResponseUnmarshaller.cs" />
+    <Compile Include="Iot\Transform\V20170420\QueryDeviceResponseUnmarshaller.cs" />
+    <Compile Include="Iot\Transform\V20170420\QueryPageByApplyIdResponseUnmarshaller.cs" />
+    <Compile Include="Iot\Transform\V20170420\RegistDeviceResponseUnmarshaller.cs" />
+    <Compile Include="Iot\Transform\V20170420\RevertRpcResponseUnmarshaller.cs" />
+    <Compile Include="Iot\Transform\V20170420\ServerOnlineResponseUnmarshaller.cs" />
+    <Compile Include="Iot\Transform\V20170420\SubResponseUnmarshaller.cs" />
+    <Compile Include="Iot\Transform\V20170420\SubTopicFilterResponseUnmarshaller.cs" />
+    <Compile Include="Iot\Transform\V20170420\UnSubResponseUnmarshaller.cs" />
+    <Compile Include="Iot\Transform\V20170420\UpdateProductResponseUnmarshaller.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iot\Model\.DS_Store" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\aliyun-netcore-sdk-core\aliyun-netcore-sdk-core.csproj">
+      <Project>{f4d39444-4878-45bf-94e8-f2c67fef2738}</Project>
+      <Name>aliyun-netcore-sdk-core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
